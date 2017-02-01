@@ -62,7 +62,7 @@ public class BinarySearchTreeTester {
 		assertEquals(5, tree.size());
 		assertEquals("[2, 3, 4, 5, 6]", tree.toString());
 	}
-/*
+
 	@Test
 	public void testRemoveExistingMiddleItemWithEmptyRightChild() {
 		assertTrue(tree.remove(4));
@@ -126,6 +126,5 @@ public class BinarySearchTreeTester {
 		stringTree.remove("C");
 		assertFalse(stringTree.contains("C"));
 	}
-	*/
-	
+
 }
