@@ -1,3 +1,10 @@
+/*
+Gruppmedlemmar:
+Tobias Ahnhem toah5501
+Daniel Andersson daan2233
+Eric Egan ereg8941
+ */
+
 /**
  *
  * Detta är den enda av de tre klasserna ni ska göra några ändringar i. (Om ni
