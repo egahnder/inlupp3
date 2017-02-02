@@ -74,16 +74,16 @@ public class BinarySearchTreeNode<T extends Comparable<T>> {
             } else {
                 left = left.remove(data);
             }
-        }else if (right != null && this.data.compareTo(data) < 0){
+        } else if (right != null && this.data.compareTo(data) < 0){
             if (right.data.compareTo(data) == 0) {
                 right = remove(right);
             } else {
                 right = right.remove(data);
             }
-        }
-        else if (this.data.compareTo(data) == 0){
+        } else if (this.data.compareTo(data) == 0){
             return remove(this);
         }
+
         return this;
     }
 
@@ -92,11 +92,13 @@ public class BinarySearchTreeNode<T extends Comparable<T>> {
             subTree.data = subTree.left.findMax();
             subTree.left = subTree.left.remove(subTree.left.findMax());
             return subTree;
-        } else if (subTree.right != null)
+        } else if (subTree.right != null) {
             return subTree.right;
+        }
         else if (subTree.left != null){
             return subTree.left;
         }
+
         return null;
     }
 
